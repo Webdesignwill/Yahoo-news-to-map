@@ -1,4 +1,4 @@
-bbc-me
+Yahoo-news-to-map
 ======
 Google Maps news viewer using Yahoo 'Google News on Map' pipe to display news features at the news location.
 
