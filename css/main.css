@@ -1,0 +1,71 @@
+@import url('reset.css');
+
+/* General */
+
+html {
+  height: 100%
+}
+body {
+  font-family:'Arial', Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position:relative;
+}
+
+/* map */
+#map-canvas {
+  height: 100%;
+  z-index:5;
+}
+
+/* Utils */
+.transparency {
+  zoom: 1;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+}
+
+/* News */
+.news-body {
+  width:300px;
+  background:url('../img/mask-bg.png');
+  position:absolute;
+  z-index:10;
+  left:10px;
+  top:10px;
+}
+.news-body li {
+  border-bottom:1px solid #333;
+  position:relative;
+}
+.news-body li button {
+  position:absolute;
+  right:10px;
+  top:10px;
+  color:#FFF;
+  font-weight:bold;
+  background:url('../img/mask-bg.png');
+  border:none;
+  cursor:pointer;
+}
+.news-body li button:hover {
+  background:#000;
+}
+.news-body li.last {
+  border:none;
+}
+.news-body li a {
+  color:#FFF;
+  cursor:pointer;
+  font-size:12px;
+  padding:10px 40px 10px 10px;
+  display:block;
+  line-height:22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.news-body li a:hover {
+  background:url('../img/mask-bg.png');
+}
